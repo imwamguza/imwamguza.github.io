@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Tailwind Sample Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold text-blue-600">MyWebsite</div>
+      <div class="space-x-6">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#services" class="hover:text-blue-600">Services</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-blue-600 text-white py-24 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to My Website</h1>
+    <p class="text-lg md:text-xl mb-6">A modern responsive website built with TailwindCSS</p>
+    <a href="#about" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded hover:bg-gray-100 transition">Learn More</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-6xl mx-auto py-20 px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+    <p class="text-gray-700 max-w-3xl mx-auto mb-4">
+      I am a passionate web developer creating responsive and modern websites. This sample page demonstrates clean layout, easy navigation, and TailwindCSS styling.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-100 py-20">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-12">Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded shadow p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Web Design</h3>
+          <p>Creating responsive and modern layouts for websites and applications.</p>
+        </div>
+        <div class="bg-white rounded shadow p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Development</h3>
+          <p>Building fast, scalable, and efficient web applications with modern frameworks.</p>
+        </div>
+        <div class="bg-white rounded shadow p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">SEO Optimization</h3>
+          <p>Improving website visibility and performance to reach more audience online.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-6xl mx-auto py-20 px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+    <p class="text-gray-700 mb-6">Have questions or want to work together? Reach out!</p>
+    <form class="max-w-xl mx-auto grid gap-4">
+      <input type="text" placeholder="Your Name" class="border rounded px-4 py-2 w-full" />
+      <input type="email" placeholder="Your Email" class="border rounded px-4 py-2 w-full" />
+      <textarea placeholder="Your Message" class="border rounded px-4 py-2 w-full"></textarea>
+      <button class="bg-blue-600 text-white font-semibold px-6 py-3 rounded hover:bg-blue-700 transition">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-6 text-center">
+    © 2025 MyWebsite. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
